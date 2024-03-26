@@ -23,7 +23,7 @@ const ContactList = () => {
       {visibleContacts.map((contact) => (
         <Contact
           key={contact.id}
-          contact={{ ...contact, id: parseInt(contact.id) }}
+          contact={{ ...contact, id: contact.id }}
         />
       ))}
     </div>
